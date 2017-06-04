@@ -117,6 +117,7 @@ class CustomCell: UICollectionViewCell{
         button.setTitle("Like", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor(red: 180/255, green: 180/255, blue: 180/255, alpha: 0.9), for: .normal)
+        button.addTarget(self, action: #selector(likePressed(sender:)), for: .touchUpInside)
         return button
     }()
     
@@ -125,6 +126,7 @@ class CustomCell: UICollectionViewCell{
         button.setTitle("Comment", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor(red: 180/255, green: 180/255, blue: 180/255, alpha: 0.9), for: .normal)
+        button.addTarget(self, action: #selector(commentPressed(sender:)), for: .touchUpInside)
         return button
     }()
     
@@ -133,8 +135,25 @@ class CustomCell: UICollectionViewCell{
         button.setTitle("Share", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor(red: 180/255, green: 180/255, blue: 180/255, alpha: 0.9), for: .normal)
+        button.addTarget(self, action: #selector(sharePressed(sender:)), for: .touchUpInside)
         return button
     }()
+    
+    
+    func likePressed(sender: UIButton){
+        // Implement likePressed Code
+        print("Like Pressed")
+    }
+    
+    func commentPressed(sender: UIButton){
+        // Implement commentPressed Code
+        print("Comment Pressed")
+    }
+    
+    func sharePressed(sender: UIButton){
+        // Implement sharePressed Code
+        print("Share Pressed")
+    }
     
     func setupViews(){
         self.backgroundColor = .white
