@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		0A80B4181EE463060007BE90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B4171EE463060007BE90 /* AppDelegate.swift */; };
 		0A80B41A1EE463060007BE90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B4191EE463060007BE90 /* ViewController.swift */; };
-		0A80B41D1EE463060007BE90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B41B1EE463060007BE90 /* Main.storyboard */; };
 		0A80B41F1EE463060007BE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B41E1EE463060007BE90 /* Assets.xcassets */; };
 		0A80B4221EE463060007BE90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A80B4201EE463060007BE90 /* LaunchScreen.storyboard */; };
+		0A80B42A1EE46D5A0007BE90 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80B4291EE46D5A0007BE90 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A80B4141EE463060007BE90 /* FacebookNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A80B4171EE463060007BE90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A80B4191EE463060007BE90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0A80B41C1EE463060007BE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A80B41E1EE463060007BE90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A80B4211EE463060007BE90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A80B4231EE463060007BE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A80B4291EE46D5A0007BE90 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				0A80B4171EE463060007BE90 /* AppDelegate.swift */,
 				0A80B4191EE463060007BE90 /* ViewController.swift */,
-				0A80B41B1EE463060007BE90 /* Main.storyboard */,
+				0A80B4291EE46D5A0007BE90 /* Post.swift */,
 				0A80B41E1EE463060007BE90 /* Assets.xcassets */,
 				0A80B4201EE463060007BE90 /* LaunchScreen.storyboard */,
 				0A80B4231EE463060007BE90 /* Info.plist */,
@@ -126,7 +126,6 @@
 			files = (
 				0A80B4221EE463060007BE90 /* LaunchScreen.storyboard in Resources */,
 				0A80B41F1EE463060007BE90 /* Assets.xcassets in Resources */,
-				0A80B41D1EE463060007BE90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A80B42A1EE46D5A0007BE90 /* Post.swift in Sources */,
 				0A80B41A1EE463060007BE90 /* ViewController.swift in Sources */,
 				0A80B4181EE463060007BE90 /* AppDelegate.swift in Sources */,
 			);
@@ -145,14 +145,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A80B41B1EE463060007BE90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A80B41C1EE463060007BE90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A80B4201EE463060007BE90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -269,6 +261,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arksoft.FacebookNewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -282,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arksoft.FacebookNewsFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
